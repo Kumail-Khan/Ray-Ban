@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+}
+
+#back {
+  width: 100%;
+  height: 100vh;
+}
+
+#back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#back img:nth-child(1) {
+  opacity: 0;
+  display: none;
+}
+
+#top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.workingarea {
+  width: 80%;
+  height: 100vh;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .nleft,
+.nav .nright {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.nleft img {
+  width: 6vw;
+}
+
+.nleft a,
+.nright a {
+  pointer-events: all;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+}
+
+.hleft {
+  min-width: 50%;
+}
+
+.hleft .elem {
+  height: 9vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.hleft .elem h1:nth-child(1) {
+  top: 0;
+}
+.hleft .elem h1 {
+  line-height: 0.9;
+  font-size: 11vw;
+  font-weight: 500;
+  color: #fff;
+  font-family: "kajiro";
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.hleft button {
+  margin-top: 50px;
+  padding: 0.6vw 3vw;
+  font-size: 3vw;
+  letter-spacing: 3px;
+  font-family: "kajiro";
+  color: #000000;
+  cursor: pointer;
+  pointer-events: all;
+}
+.hright {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 17%;
+}
+
+.hright p {
+  text-align: end;
+  font-size: 0.75vw;
+  font-weight: 400;
+  color: #fff;
+}
+
+.hright .imagediv {
+  width: 100%;
+  height: 9vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-image: url(portratit.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hright p:nth-child(3) {
+  margin-bottom: 100px;
+}
